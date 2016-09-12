@@ -1,0 +1,53 @@
+<html>
+<head><title> Professional Activities / Commities </title>
+<LINK REL=StyleSheet HREF="tp.css" style type="text/css"> 
+</style>
+</head>
+<body>
+
+<div style="display: block; background-color: grey; width:100%; height: 440px; margin-top: 35px; margin-bottom: 30px; position: absolute; z-index: -1;">
+</div> 
+ 
+<form style="position: static; height: 410px; width: 500px; display: block; margin: 0 auto; margin-top: 48px;" id="bibliography" action="prof_activ.php" method="post">
+
+<!-- <form id="bibliography" action="prof_activ.php" method="post"> -->
+
+
+<span style="display: block; margin: 0 auto; text-align: center;">
+
+<h5 style="padding-top: 15px;"> Professional Appointments </h5>
+
+
+<label for="activities">Activities</label><br>
+<select name="activities" >
+<option value="none"> </option>
+<option value="administrative">Administrative</option>
+<option value="commities">Commities</option>
+<option value="profactiv">Professional Activities</option>
+</select><br><br>
+
+<label for="appointment">Professional Appointment / Commitee</label><br>
+<input type="text" name="appointment" size="50" /><br><br>
+<label for="description">Description</label><br>
+<textarea name="description" row="5" cols="50"></textarea><br>
+<label for="institution">Institution</label><br>
+<input type="text" name="institution" size="20" /><br><br>
+<label for="from">From</label>
+<INPUT name="popcal" onclick="if(self.gfPop)gfPop.fPopCalendar(this.form.from);" type="button" value=" V ">
+<iframe width=105 height=102 name="gToday:supermini:agenda.js" id="gToday:supermini:agenda.js" src="Supermini/ipopeng.htm" scrolling="no" frameborder="0" style="visibility:visible; z-index: 999; position:absolute; top: -5px; left: -500px;">
+</iframe>
+<br>
+<input type="text" name="from" size="10" /><br>
+<label for="to">To</label>
+<INPUT name="popcal" onclick="if(self.gfPop)gfPop.fPopCalendar(this.form.to);" type="button" value=" V ">
+<iframe width=105 height=102 name="gToday:supermini:agenda.js" id="gToday:supermini:agenda.js" src="Supermini/ipopeng.htm" scrolling="no" frameborder="0" style="visibility:visible; z-index: 999; position:absolute; top: -5px; left: -500px;">
+</iframe>
+<br>
+<input type="text" name="to" size="10" /><br><br>
+<input style="font-size:24px;" type="submit" value="Submit">
+
+</span>
+</form>
+</body>
+</html>
+ 

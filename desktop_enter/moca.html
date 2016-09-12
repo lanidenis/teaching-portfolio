@@ -1,0 +1,57 @@
+<html>
+<head>
+<!-- <title>MOCA</title> -->
+
+<LINK REL=StyleSheet HREF="tp.css" style type="text/css"> 
+
+</style>
+</head>
+<body>
+
+<div style="display: block; background-color: grey; width:100%; height: 370px; margin-top: 35px; margin-bottom: 30px; position: absolute; z-index: -1;">
+</div> 
+ 
+<form style="position: static; height: 340px; width: 500px; display: block; margin: 0 auto; margin-top: 48px;" id="bibliography" action="moca.php" method="post">
+
+<!-- <form id="bibliography" action="moca.php" method="post"> -->
+
+<span style="display: block; margin: 0 auto; text-align: center;">
+
+<h5 style="padding-top: 15px;"> ABA / MOCA </h5>
+
+<label for="date">Date</label>
+<INPUT name="popcal" onclick="if(self.gfPop)gfPop.fPopCalendar(this.form.dc);" type="button" value=" V ">
+<iframe width=105 height=102 name="gToday:supermini:agenda.js" id="gToday:supermini:agenda.js" src="Supermini/ipopeng.htm" scrolling="no" frameborder="0" style="visibility:visible; z-index: 999; position:absolute; top: +2px; left: -500px;">
+</iframe><br>
+<input name="dc" value="" size="25"><br><br>
+
+<label for="status">Status</label><br>
+<select name="status" >
+<option value="none">  </option>
+<option value="Not in ABA system">Not in ABA system</option>
+<option value="Board Eligible">Board Eligible</option>
+<option value="Non Time-Limited">Non-time limited Certification</option>
+<option value="Time-Limited">Time limited Certification</option>
+<option value="Not in MOCA system">Not in MOCA system</option>
+</select><br>
+
+<label for="activity">Activity</label><br>
+<select name="activity" >
+<option value="none">  </option>
+<option value="NON Self-Assessment">NON Self-Assessment</option>
+<option value="Self-Assessment">Self-Assessment</option>
+<option value="ACE">ACE</option>
+<option value="SEE">SEE</option>
+<option value="Audio Digest">Audio Digest</option>
+<option value="Patient Safety">Patient Safety</option>
+</select><br>
+<label for="title">Title</label><br>
+<input type="text" name="title" size="50" /> <br><br>
+<label for="credit">Credit</label><br>
+<input type="text" name="credit" size="5" /> <br><br>
+<input style="font-size:24px;" type="submit" value="Submit">
+
+</span>
+</form>
+</body>
+</html>

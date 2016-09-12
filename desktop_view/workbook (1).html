@@ -1,0 +1,54 @@
+<html>
+<head><title>TP Workbook</title>
+<LINK REL=StyleSheet HREF="tp.css" style type="text/css"> 
+</style>
+
+</head>
+<body>
+
+<h3>Teaching Portfolio</h3>
+<br><br>
+<div id="menu13">
+<br>
+<ul>
+<li><a href="Display/display_person.php" title="View" target="_blank">View TP</a></li>
+<li><a href="statement.php" title="Tools" target="_blank">Philosophy Statement</a></li>
+<li><a href="cv.html" title="CV" target="_blank">Upload CV</a></li>
+<li><a href="Display/displayCV.php" title="View" target="_blank">View CV</a></li>
+<li><a href="Display/MOCA Requirements by Certification Year.docx" title="MOCA" >MOCA Requirements</a></li>
+<li><a href="change-password.html" title="change password" target="_blank">Change Password</a></li>
+<li><a href="logout.php"  title="logout" target="_blank">Log Out</a></li>		
+</ul>
+</div>
+</br>
+
+<form class="tp_navigate" action="view.php" method="post">
+<h2>Select Table &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Select Action </h2>
+<select name="tables">
+<option value="none"> </option>
+<option value="bibliography">Publications</option>
+<option value="presentations">Presentations</option>
+<option value="moca">ABA/MOCA</option>
+<option value="cme">CME</option>
+<option value="prof">Professional Activities</option>
+<option value="awards">Awards</option>
+<option value="mentorship">Mentorship</option>
+<option value="tools">Tools Developed</option>
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<input type="radio" name="select_action" value="enter">Enter
+<input type="radio" name="select_action" value="delete">Delete
+<input type="radio" name="select_action" value="update">Update
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<input name="select" type="submit" value="Submit" />
+</form>
+
+
+</body>
+</html>

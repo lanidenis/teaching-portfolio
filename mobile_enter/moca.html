@@ -1,0 +1,79 @@
+<!-- 
+<html>
+<head>
+
+<LINK REL=StyleSheet HREF="tp.css" style type="text/css"> 
+
+</style>
+</head>
+<body>
+
+-->
+
+<div style="display: block; background-color: #d3d3d3; width:100%; height: 100px;"></div>
+<div style="display: block; background-color: #d3d3d3; width:100%; height: 1560px; margin-bottom: 70px;">
+
+<form style="
+  	    background:  #fdedf2;     
+            border: 2px solid maroon;	
+	    width: 70%;               
+	    display: block;
+            margin: 0 auto;" action="mobile_enter/moca.php" method="post">
+
+
+<span style="display: block; margin: 0 auto; text-align: center; color: maroon; font-size: 60px;">
+
+<b><p style="font-size: 64px; color: maroon; text-align: center;"> ABA / MOCA </p></b>
+
+<label for="date">Date</label>
+<INPUT name="popcal" onclick="if(self.gfPop)gfPop.fPopCalendar(this.form.dc);" style="height: 60px; width: 60px;" type="button" value=" V ">
+<iframe width=105 height=102 name="gToday:supermini:agenda.js" id="gToday:supermini:agenda.js" src="Supermini/ipopeng.htm" scrolling="no" frameborder="0" style="visibility:visible; z-index: 999; position:absolute; top: +2px; left: -500px;">
+</iframe>
+<br>
+<input name="dc" value="" style="height: 80px;" size="40">
+<br><br>
+
+<label for="status">Status</label>
+<br>
+<select style="height: 60px; width: 200px;" name="status" >
+<option value="none">  </option>
+<option value="Not in ABA system">Not in ABA system</option>
+<option value="Board Eligible">Board Eligible</option>
+<option value="Non Time-Limited">Non-time limited Certification</option>
+<option value="Time-Limited">Time limited Certification</option>
+<option value="Not in MOCA system">Not in MOCA system</option>
+</select>
+<br><br>
+
+<label for="activity">Activity</label>
+<br>
+<select style="height: 60px; width: 200px;" name="activity" >
+<option value="none">  </option>
+<option value="NON Self-Assessment">NON Self-Assessment</option>
+<option value="Self-Assessment">Self-Assessment</option>
+<option value="ACE">ACE</option>
+<option value="SEE">SEE</option>
+<option value="Audio Digest">Audio Digest</option>
+<option value="Patient Safety">Patient Safety</option>
+</select>
+<br><br>
+
+<label for="title">Title</label>
+<br>
+<input type="text" name="title" style="height: 80px;" size="80" /> 
+<br><br>
+
+<label for="credit">Credit</label>
+<br>
+<input type="text" name="credit" style="height: 80px;" size="40" /> 
+<br><br>
+
+<input style="height: 60px; width: 200px; margin-bottom: 60px;" type="submit" value="Submit">
+
+</span>
+</form>
+</div>
+<!--
+</body>
+</html>
+-->

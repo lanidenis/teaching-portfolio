@@ -1,0 +1,230 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>welcome to TP</title>
+<link rel="stylesheet" type="text/css" href="../css/mobiletp.css"/> 
+
+<!--  
+  media="only screen and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)" />
+-->
+
+<style type="text/css">
+#main h2 {
+	background: url(images/open.png) no-repeat 0% 10%;
+	padding-left: 20px;
+	cursor: pointer;
+}
+#main h2.close {
+	background-image: url(images/close.png);
+}
+#main .answer {
+  background-color: white;
+}</style>
+
+<script src="../js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="validation/jquery.validate.js" type="text/javascript"></script>
+<script src="js/jquery.validate.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function( ) {
+ $('.answer').hide();
+ $('#main h2').toggle(
+		function() {
+	   $(this).next('.answer').fadeIn();
+		 $(this).addClass('close');
+		},
+		function() {
+		  $(this).next('.answer').fadeOut();
+			$(this).removeClass('close');
+	  }
+	); // end toggle
+	$('#login').validate( {
+   rules: {
+     name: 'required',
+     password: {
+        required:true,
+        rangelength:[6,12]
+     },
+ messages: {
+
+password: {
+        required: 'Please type a password',
+        rangelength: 'Password must be between 4 and 16 characters long.'
+ }
+   },
+   errorPlacement: function(error, element) {
+       if ( element.is(":radio") || element.is(":checkbox")) {
+          error.appendTo( element.parent());
+        } else {
+          error.insertAfter(element);
+        }
+    }
+}
+  }); // end validate
+
+});   //end ready
+</script>
+
+<!-- Install Restive.JS -->
+<!-- <script type="text/javascript" src="restive.min.js"></script> -->
+<!-- Configure Restive.JS -->
+<!-- 
+<script>
+    $( document ).ready(function() {
+        $('body').restive({
+            breakpoints: ['10000'],
+            classes: ['nb'],
+            turbo_classes: 'is_mobile=mobi,is_phone=phone,is_tablet=tablet,is_portrait=portrait,is_landscape=landscape'
+        });
+    });
+</script>
+<link href="restive.css" media="all" rel="stylesheet" type="text/css" /> 
+-->
+
+
+</head>
+<body id="twoCol" style="background-color: white;">
+
+<div id="banner">
+<img style="display: block; margin: 0 auto;" alt="TP" width="550" height="320" src="../images/tpheader2.png"/>
+</div>
+<!--
+<div id="log">
+<h1><a href="sign-upTP.html">Create an account</a></h1></div>
+-->
+
+<div id="container">
+
+<div id="sidebar"><!--
+<h2><a href="old_index.html">Login</a></h2>   -->
+<form id="login" method="post" action="login.php">
+<div>
+<h2 id="mouse"><u>Log In</u></h2>
+<!-- <legend><h2>Log In</h2></legend> -->
+	<label class="label" for="name">Username</label>
+		<input name="name" title="Please type your username." class="required" id="name" type="text">
+	<label class="label" for="password">Password</label>
+		<input name="password" title="password is missing" class="required" id="password" type="password"><br>
+		<input name="logon" id="submit" type="submit" value="Login">
+</div>
+
+<div id="blah">
+<h2 style="font-size: 5em; text-align: center; background-color: maroon; color: white;">Not Registered?</h2>
+<h2 style="font-size: 5em; text-align: center;"><a href="sign-upTP.html" style="color: maroon;">Create <br> An Account</a></h2><br>
+<h2 style="font-size: 5em; text-align: center; background-color: maroon; color: white;">Presentation Feedback?</h2>
+<h2 style="font-size: 5em; text-align: center;"><a href="user_feedback_mob.php" style="color: maroon;">Deliver <br> To Presentor</a></h2><br>
+</div>
+</form>
+
+<img style="display: block; margin: 0 auto; width: 500px; height: 500px; margin-top: 40px;" src="images/Basiensf.jpg"/>
+</div>
+
+</div>
+<!-- <div id="pillars"></div> -->
+
+<div id="contentWrap">
+<div id="main">
+<h1><span style="font-weight: bold;">Personal Tool</span> <br> for a <span style="font-weight: bold;">Successful <br> Career </span></h1>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;In comparison to the Curriculum Vitae,   the teaching   portfolio   offers versatility and detailed scholarly activity,   thus   allowing   professionals to track different stages of their careers and reflect upon it.   Employers and chairpersons are able to have comprehensive representation of an individual&rsquo;s  professional activities.  The teaching portfolio (TP) will provide documentation of expertise, research progress, teaching experience and educational accomplishments.   </p>
+<!--
+<h2>Current challenges we face today and how the Teaching Portfolio can help:</h2>
+<div class="answer">
+<ul>
+<li>Increased undergraduate involvement in faculty research.� How would you integrate your research into your courses and enhance student participation in your work? How would you demonstrate interactions and evaluations for different levels of trainees- medical students, respiratory therapist, nurses, high school students?</li>
+<li>Increased usage of technology in the classroom and workplace.� How would you use wikis, and/or web-based resources to have a substantial impact on a course that you teach?  How would you demonstrate those interactions?</li>
+<li>Interdisciplinary curriculums: Self documentation of descriptive scholarly activity with emphasis on regional, national and international audiences.� How could you archive this if your department does not provide a record of such educational interactions?</li></ul><br>
+<br>
+<p>
+Use your TP to provide not only continuing documentation of professional and scholarly activities, but also to improve your skills, hone your ideas, and develop new tracts and techniques. Instead of updating your CV when appropriate, the TP allows for professional development in all areas of practice: both private and academic. </p></div>
+-->
+
+<p class="title1"><b>Challenges</b> We Face: <br> How <b>Teaching Portfolio</b> <br> Can Help</p>
+<p>Increased undergraduate involvement in faculty research. How would you integrate your research into your courses and enhance student participation in your work? How would you demonstrate interactions and evaluations for different levels of trainees- medical students, respiratory therapist, nurses, high school students?</p>
+<p>Increased usage of technology in the classroom and workplace. How would you use wikis, and/or web-based resources to have a substantial impact on a course that you teach?  How would you demonstrate those interactions?</p>
+<p>Interdisciplinary curriculums: Self documentation of descriptive scholarly activity with emphasis on regional, national and international audiences. How could you archive this if your department does not provide a record of such educational interactions?</p>
+<p>Use your TP to provide not only continuing documentation of professional and scholarly activities, but also to improve your skills, hone your ideas, and develop new tracts and techniques. Instead of updating your CV when appropriate, the TP allows for professional development in all areas of practice: both private and academic. </p>
+
+<p class="who">
+What can <br> Teaching Portfolio <br> offer you?</p>
+<h2>Master Teacher </h2>
+<div class="answer">
+<ul>
+<li>Systematically reassess your philosophy of teaching statement, the relationship between the teacher as scholar and the scholar as teacher </li>
+<li>Portfolio can be used to demonstrate mastery of clinical concepts supporting  your </li>
+<li>philosophical viewpoint</li>
+<li>Document   command of educational content: main ideas, turning points, and supporting details </li>
+<li>Demonstrate materials used in teaching, outcomes data ,storage for feedback  on effective teaching</li>
+<li>Archives  advanced degrees,  and  privileging/consultations in area of expertise .</li></ul></div>
+<h2>Distinguished Teacher  </h2>
+<div class="answer">
+<ul>
+<li>Philosophy of teaching statement perceives the relationship between the teacher as scholar and the scholar as teacher </li>
+<li>Demonstrating expertise in  vital themes in teaching philosophy </li>
+<li>Demonstrating challenging and engaging teaching content developing possibly new teaching concepts. </li>
+<li>Archiving expertise in systems based learning tools.  Archiving techniques using<strong> current technology </strong></li></ul></div>
+<h2>Accomplished Teacher  </h2>
+<div class="answer">
+<ul>
+<li>Philosophy of teaching statement shows that scholarship and teaching are<strong> linked </strong></li>
+<li>Content of unit and lesson plans are standards-based and focus on your institutions professional promotions structure. </li>
+<li>Content can  demonstrate command of the research base on effective teaching</li>
+<li>Documenting CME in area of interest on tract to becoming expert in field.</li></ul></div>
+<h2>Proficient (Entry-Level or Tenure Track) Teacher </h2>
+<div class="answer">
+<ul>
+<li>Philosophy statement reflects on<strong> progress</strong> of career as teacher and scholar </li>
+<li>Archives curriculum material that are standards-based and demonstrate contributing content</li>
+<li>Allows review and reflection on teaching philosophy  </li>
+<li>Organized referencing of educational activities : content and feedback</li></ul></div>
+<h2>Apprentice (Student) Teacher  </h2>
+<div class="answer">
+<ul>
+<li><strong>Formulates</strong> a philosophy of teaching statement </li>
+<li>Completion of student teaching using standards-based unit plans and lesson plans </li>
+<li>Teaching certificate awarded </li>
+<li>Initiates role modeling for professional journals subscription/ reviewing  </li>
+<li><strong>A teaching portfolio may be used to land your first job!</strong></li></ul></div>
+<h2>Novice Teacher </h2>
+<div class="answer">
+<ul>
+<li>Documents  progress in professional education courses (CME content)</li>
+<li>Documenting  progress in teaching methods  </li>
+<li>Satisfactory delivery of standards-based content in teaching clinical experiences </li>
+<li>Maintenance Of  Certification in Anesthesia n(MOCA)</li>
+<li>Allowing early feedback of teaching techniques (strengths and weaknesses) </li>
+<li>Documentation of minimum standards in  education and memberships in committees &amp; societies  </li>
+<li>Templates serve as guide to start and maintain professional progress</li></ul></div>
+<h2>Chairpersons/Employers </h2>
+<div class="answer">
+<ul><strong></strong>
+<li><strong>Preparing a Program Information Form (PIF)</strong> </li>
+<li>Electronic Database for queries such as Research and scholarly activity within a department Credentialing </li>
+<li>Personal Templates for creating PIF Documentations.  </li>
+<li>Assessments for teaching awards  </li>
+<li>Documenting General Departmental teaching effectiveness </li>
+<li>Contract renewals and individual assessments  </li>
+<li>Can be used for promotion and tenure within a department. </li></ul></div>
+<h2>Private Practitioners: Independent Practitioners</h2>
+<div class="answer">
+<ul>
+<li>Documenting CME  </li>
+<li>MOCA Requirements  </li>
+<li>Self Assessments </li>
+<li>Workshops and Reimbursement portfolio for Professional Activities. </li>
+<li>Tracking Personal Skills  </li>
+<li>Quality Assurance/Quality Improvement </li></ul></div>
+
+</div>
+
+</div>
+
+<!-- <div id="footer"><em>&ldquo;My Teaching Portfolio.2006.&rdquo;&nbsp;</em></div></div> -->
+<div id="footer"><em>&#8220;&copy; 2006. My Teaching Portfolio.&#8221;</em></div>
+</body>
+</html>

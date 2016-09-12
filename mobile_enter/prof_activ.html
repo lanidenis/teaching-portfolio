@@ -1,0 +1,74 @@
+<!--
+<html>
+<head><title> Professional Activities / Commities </title>
+<LINK REL=StyleSheet HREF="tp.css" style type="text/css"> 
+</style>
+</head>
+<body>
+-->
+
+<div style="display: block; background-color: #d3d3d3; width:100%; height: 100px;"></div>
+<div style="display: block; background-color: #d3d3d3; width:100%; height: 2300px; margin-bottom: 70px;">
+
+<form style="
+  	    background:  #fdedf2;   
+            border: 2px solid maroon;	
+	    width: 70%;               
+	    display: block;
+            margin: 0 auto;" action="mobile_enter/prof_activ.php" method="post">
+
+
+<span style="display: block; margin: 0 auto; text-align: center; color: maroon; font-size: 60px;">
+
+<b><p style="font-size: 64px; color: maroon; text-align: center;">Professional Appointments</p></b>
+
+<label for="activities">Activities</label>
+<br>
+<select style="height: 60px; width: 200px;" name="activities" >
+<option value="none"> </option>
+<option value="administrative">Administrative</option>
+<option value="commities">Commities</option>
+<option value="profactiv">Professional Activities</option>
+</select>
+<br><br>
+
+<label for="appointment">Appointment/ <br> Commitee</label>
+<br>
+<input type="text" name="appointment" style="height: 160px;" size="80" />
+<br><br>
+
+<label for="description">Description</label>
+<br>
+<textarea name="description" rows="20" cols="80"></textarea>
+<br><br>
+
+<label for="institution">Institution</label>
+<br>
+<input type="text" name="institution" style="height: 160px;" size="80" />
+<br><br>
+
+<label for="from">From</label>
+<INPUT name="popcal" onclick="if(self.gfPop)gfPop.fPopCalendar(this.form.from);" style="height: 60px; width: 60px;" type="button" value=" V ">
+<iframe width="210" height="204" name="gToday:supermini:agenda.js" id="gToday:supermini:agenda.js" src="Supermini/ipopeng.htm" scrolling="no" frameborder="0" style="visibility:visible; z-index: 999; position:absolute; top: -5px; left: -500px;">
+</iframe>
+<br>
+<input style="height: 80px;" size="40" type="text" name="from" />
+<br><br>
+
+<label for="to">To</label>
+<INPUT name="popcal" onclick="if(self.gfPop)gfPop.fPopCalendar(this.form.to);" style="height: 60px; width: 60px;" type="button" value=" V ">
+<iframe width="210" height="204" name="gToday:supermini:agenda.js" id="gToday:supermini:agenda.js" src="Supermini/ipopeng.htm" scrolling="no" frameborder="0" style="visibility:visible; z-index: 999; position:absolute; top: -5px; left: -500px;">
+</iframe>
+<br>
+<input style="height: 80px;" size="40" type="text" name="to" />
+<br><br>
+<input style="height: 60px; width: 200px; margin-bottom: 30px;" type="submit" value="Submit">
+
+</span>
+</form>
+</div>
+<!--
+</body>
+</html>
+-->
+ 

@@ -1,0 +1,82 @@
+<!--
+<head><title>Mentorship</title>
+
+<LINK REL=StyleSheet HREF="tp.css" style type="text/css"> 
+
+</style>
+</head>
+<body>
+-->
+
+<div style="display: block; background-color: #d3d3d3; width:100%; height: 100px;"></div>
+<div style="display: block; background-color: #d3d3d3; width:100%; height: 2050px; margin-bottom: 70px;">
+
+<form style="
+  	    background:  #fdedf2; 
+            border: 2px solid maroon;	
+	    width: 70%;               
+	    display: block;
+            margin: 0 auto;" action="mobile_enter/mentorship.php" method="post">
+
+
+<span style="display: block; margin: 0 auto; text-align: center; color: maroon; font-size: 60px;">
+
+<b><p style="font-size: 64px; color: maroon; text-align: center;">Mentorship</p></b>
+
+
+<label for="lname">Last Name</label>
+<br>
+<input type="text" name="lname" style="height: 80px;" size="40" />
+<br><br>
+
+
+<label for="fname">First Name</label>
+<br>
+<input type="text" name="fname" style="height: 80px;" size="40"/>
+<br><br>
+
+<label for="category">Category</label>
+<br>
+<select style="height: 60px; width: 200px;" name="category" >
+<option value=""> </option>
+<option value="faculty">Faculty</option>
+<option value="HighSchoolStudent">High School Student</option>
+<option value="medstudent">Medical Student</option>
+<option value="resident">Resident</option>
+<option value="Case Report">Case Report</option>
+<option value="others">Other</option>
+</select>
+<br><br>
+
+
+<label for="mdate">Start Date</label>
+<INPUT name="popcal" onclick="if(self.gfPop)gfPop.fPopCalendar(this.form.mdate);" style="height: 60px; width: 60px;" type="button" value=" V ">
+<iframe width=105 height=102 name="gToday:supermini:agenda.js" id="gToday:supermini:agenda.js" src="Supermini/ipopeng.htm" scrolling="no" frameborder="0" style="visibility:visible; z-index: 999; position:absolute; top: -5px; left: -500px;">
+</iframe>
+<br>
+<input type="text" name="mdate" style="height: 80px;" size="40" /> 
+<br><br>
+
+<label for="m_end">End Date</label>
+<INPUT name="popcal" onclick="if(self.gfPop)gfPop.fPopCalendar(this.form.m_end);" style="height: 60px; width: 60px;" type="button" value=" V ">
+<iframe width=105 height=102 name="gToday:supermini:agenda.js" id="gToday:supermini:agenda.js" src="Supermini/ipopeng.htm" scrolling="no" frameborder="0" style="visibility:visible; z-index: 999; position:absolute; top: -5px; left: -500px;">
+</iframe>
+<br>
+<input type="text" name="m_end" style="height: 80px;" size="40" /> 
+<br><br>
+
+<label for="evaluation">Evaluation</label>
+<br>
+<textarea name="evaluation" rows="20" cols="80"></textarea>
+<br><br>
+
+<input style="height: 60px; width: 200px; margin-bottom: 60px;" type="submit" value="Save">
+
+</span>
+</form>
+</div>
+
+<!--
+</body>
+</html>
+-->

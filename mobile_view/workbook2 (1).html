@@ -1,0 +1,61 @@
+<html>
+<head><title>TP Workbook</title>
+<LINK REL=StyleSheet HREF="tp2.css" style type="text/css"> 
+</style>
+</head>
+<body style="background-color:  white;">
+
+<h3 style="margin-bottom: -75px; margin-left: -50px;">Teaching</h3>
+<h3 style="margin-bottom: 30px; margin-left: 50px;">Portfolio</h3>
+<hr size="2px">
+
+<div id="greeting">
+<?php print $msg.'<br />'; ?>
+</div>
+
+<div id="backdrop">
+<form class="tp_navigate" action="view2.php" method="post">
+<h2 style="margin-top: 50px; margin-bottom: 30px;">Select Table</h2>
+<select name="tables" style="height: 5em; width: 17em; display: block; margin-bottom: 15px; margin: 0 auto;">
+<option value="none"> </option>
+<option value="bibliography">Publications</option>
+<option value="presentations">Presentations</option>
+<option value="moca">ABA/MOCA</option>
+<option value="cme">CME</option>
+<option value="prof">Professional Activities</option>
+<option value="awards">Awards</option>
+<option value="mentorship">Mentorship</option>
+<option value="tools">Tools Developed</option>
+</select>
+<br>
+
+<h2 style="margin-top: 40px;"> Select Action </h2>
+<div id="radios">
+<input id="radio" type="radio" name="select_action" value="enter"><p id="choice">&nbsp;Enter</p><br>
+<span style="margin-top: -20px;"><input id="radio" type="radio" name="select_action" value="delete"><p id="choice">&nbsp;Delete</p></span><br>
+<input id="radio" type="radio" name="select_action" value="update"><p id="choice">&nbsp;Update</p><br>
+</div>
+
+<input name="select" type="submit" value="Submit" style="font-size: 40px; display: block; margin: 0 auto; margin-bottom: 50px;"/>
+</form>
+</div>
+
+<div id="foot">
+<div id="menu13">
+<ul>
+<li><a href="Display/display_person.php" title="View" target="_blank">View TP</a></li>
+<li><a href="statement.php" title="Tools" target="_blank">Philosophy Statement</a></li>
+<li><a href="cv.html" title="CV" target="_blank">Upload CV</a></li>
+<li><a href="Display/displayCV.php" title="View" target="_blank">View CV</a></li>
+<li><a href="Display/MOCA Requirements by Certification Year.docx" title="MOCA" >MOCA Requirements</a></li>
+<li><a href="change-password.html" title="change password" target="_blank">Change Password</a></li>
+<li><a href="logout.php"  title="logout" target="_blank">Log Out</a></li>		
+</ul>
+</div>
+</div>
+
+
+<!--
+</body>
+</html>
+-->
